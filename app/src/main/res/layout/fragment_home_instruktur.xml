@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeInstrukturFragment">
+
+    <TextView
+        android:id="@+id/txtInstruktur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang, Instruktur"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints" />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/namaView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:text="Instruktur"-->
+<!--        android:textSize="25dp"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        app:layout_constraintStart_toEndOf="@id/txtInstruktur"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnInstruktur"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        app:cornerRadius="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="History Aktivitas Instruktur"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardpresensi"
+        android:backgroundTint="@color/orange"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtInstruktur"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageDonasi"
+                android:layout_width="370dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/gym" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="159dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/judulDonasi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange"
+                    android:text="Gym"
+                    android:fontFamily="@font/poppins"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Menu Izin Instruktur"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="230dp"
+                        android:text="Izin"
+                        android:textSize="12dp"
+                        app:backgroundTint="@color/orange" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardpresensi"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imagePresensi"
+                android:layout_width="370dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/gym" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="125dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/judulPresensi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange"
+                    android:text="Presensi Member Kelas Reguler dan Paket"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14dp"
+                    android:padding="1dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="230dp"
+                        android:text="Izin"
+                        android:textSize="12dp"
+                        app:backgroundTint="@color/orange" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnLogout"-->
+<!--        style="?attr/materialButtonOutlinedStyle"-->
+<!--        android:layout_width="354dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:fontFamily="@font/poppinsbold"-->
+<!--        android:text="Log out"-->
+<!--        android:textColor="#FEB139"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btnInstruktur"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginBottom="70dp"-->
+<!--        app:strokeColor="#FEB139" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

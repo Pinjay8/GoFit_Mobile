@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".HomeMemberFragment">
+
+
+    <TextView
+        android:id="@+id/judulMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang, Member"
+        android:textSize="25dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/orange"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@id/cardGym"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judulMember"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageDonasi"
+                android:layout_width="370dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/gambarkelas" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/judulDonasi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange"
+                    android:text="Kelas"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Menu Booking Kelas"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textSize="16dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Book"
+                    android:textSize="12dp"
+                    app:backgroundTint="@color/orange" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardGym"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageGym"
+                android:layout_width="370dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/gambargym" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/judulGym"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange"
+                    android:text="Gym"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Menu Booking Gym"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textSize="16dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Book"
+                    android:textSize="12dp"
+                    app:backgroundTint="@color/orange" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAktivitasGym"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Histori Aktivitas Gym"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardGym"
+        app:backgroundTint="@color/orange" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAktivitasKelas"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Histori Aktivitas Kelas"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAktivitasGym"
+        app:backgroundTint="@color/orange" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

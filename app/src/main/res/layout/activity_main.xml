@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/emailName"
+            android:layout_width="384dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="Email"
+            android:textColor="#585858"
+            android:textSize="18dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="example@gmail.com"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_user_24"
+            android:layout_marginBottom="8dp"
+            app:helperText="Masukkan Email anda">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailInputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="text"
+               />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/passwordName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="Password"
+            android:textColor="#585858"
+            android:textSize="18dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Password"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_lock_24"
+            app:helperText="Masukkan password anda">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordInputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Masuk"
+            app:cornerRadius="20dp"
+            app:backgroundTint="#fb5b21" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGantiPassword"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Ganti Password"
+        android:textColor="#fb5b21"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.094"
+        app:cornerRadius="20dp"
+        app:strokeColor="#fb5b21" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnInformasiUmum"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Informasi Umum"
+        android:textColor="#fb5b21"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGantiPassword"
+        app:layout_constraintVertical_bias="0.094"
+        app:cornerRadius="20dp"
+        app:strokeColor="#fb5b21" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

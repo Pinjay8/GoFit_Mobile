@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbg"
+    tools:context=".ProfileInstrukturFragment">
+
+
+    <ImageView
+        android:id="@+id/icon_person"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:src="@drawable/picmem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_person"/>
+
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Nama Instruktur"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_person"/>
+
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nama"/>
+
+
+    <TextView
+        android:id="@+id/jenisKelamin"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Jenis Kelamin"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email"/>
+
+
+
+    <TextView
+        android:id="@+id/No_Telpon"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Nomor Telepon"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jenisKelamin"/>
+
+
+    <TextView
+        android:id="@+id/waktu_terlambat"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Waktu Terlambat"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/No_Telpon"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_weight="5"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Log out"
+        app:cornerRadius="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/waktu_terlambat"
+        android:backgroundTint="@color/orange" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

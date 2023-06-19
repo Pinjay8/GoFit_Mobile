@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbg"
+    tools:context=".ProfileMemberFragment">
+
+
+    <ImageView
+        android:id="@+id/icon_person"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:src="@drawable/picmem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_person"/>
+
+    <TextView
+        android:id="@+id/namaKosong"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Nama"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="#585858"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaKosong"/>
+
+
+    <TextView
+        android:id="@+id/EmailKosong"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nama"/>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EmailKosong"/>
+
+    <TextView
+        android:id="@+id/masaBerlakuKosong"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Masa Berlaku"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email"/>
+
+    <TextView
+        android:id="@+id/masaBerlaku"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/masaBerlakuKosong"/>
+
+
+
+    <TextView
+        android:id="@+id/sisaDepositUangKosong"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Sisa Deposit Uang"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/masaBerlaku"/>
+
+    <TextView
+        android:id="@+id/sisaDepositUang"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sisaDepositUangKosong"/>
+
+    <TextView
+        android:id="@+id/sisaDepositKelasKosong"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Sisa Deposit Kelas"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sisaDepositUang"/>
+
+    <TextView
+        android:id="@+id/sisaDepositKelas"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sisaDepositKelasKosong"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Log out"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sisaDepositKelas"
+        app:backgroundTint="@color/orange" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
